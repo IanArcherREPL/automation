@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  automation:
+    image: automation
+    privileged: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
