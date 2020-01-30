@@ -7,7 +7,6 @@ RUN sudo apt-get -y install autoconf automake libusb-dev libusb-1.0-0-dev libpli
 
 RUN git clone https://github.com/google/ios-webkit-debug-proxy.git
 WORKDIR ios-webkit-debug-proxy
-RUN ls
 RUN git checkout v1.8.5
 RUN ./autogen.sh
 RUN make
